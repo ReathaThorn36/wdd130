@@ -3,43 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>WDD130 Project Submissions</title>
+  <title>WDD130 Projects</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background: #f5f5f5;
+      padding: 2rem;
       text-align: center;
-      padding: 50px;
     }
     h1 {
       color: #333;
     }
-    ul {
-      list-style: none;
-      padding: 0;
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
     }
-    li {
-      margin: 15px 0;
+    .link-box {
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .link-box:hover {
+      transform: scale(1.05);
     }
     a {
       text-decoration: none;
-      font-size: 1.2em;
       color: #007acc;
-    }
-    a:hover {
-      color: #005c99;
+      font-size: 1.1rem;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to WDD130 Week01 to Week06 Submissions</h1>
-  <ul>
-    <li><a href="week01/index.html" target="_blank">Week 01 - Home Page</a></li>
-    <li><a href="week02/index.html" target="_blank">Week 02 - Enhanced Home</a></li>
-    <li><a href="week03/wwr/about.html" target="_blank">Week 03 - Rafting About Us</a></li>
-    <li><a href="week04/wwr/index.html" target="_blank">Week 04 - Updated About Us</a></li>
-    <li><a href="week05/wwr/contact.html" target="_blank">Week 05 - Contact Page</a></li>
-    <li><a href="week06/wwr/index.html" target="_blank">Week 06 - Final Site</a></li>
-  </ul>
+  <h1>Welcome to My WDD130 Projects</h1>
+  <p>Select a week below to view my work:</p>
+  <div class="links">
+    <div class="link-box"><a href="week01/index.html">Week 01</a></div>
+    <div class="link-box"><a href="week02/index.html">Week 02</a></div>
+    <div class="link-box"><a href="week03/wwr/index.html">Week 03 - Rafting</a></div>
+    <div class="link-box"><a href="week04/wwr/index.html">Week 04 - Rafting</a></div>
+    <div class="link-box"><a href="week05/wwr/index.html">Week 05 - Rafting</a></div>
+    <div class="link-box"><a href="week06/wwr/index.html">Week 06 - Rafting</a></div>
+  </div>
 </body>
 </html>
