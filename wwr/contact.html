@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafting Site | Contact Us</title>
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Rafting Site Logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+
+    <section class="contact-info">
+      <h2>Contact Info</h2>
+      <p>📍 123 Whitewater Road, Adventure City, CO 80000</p>
+      <p>📞 (555) 123-4567</p>
+      <p>📧 info@raftingadventure.com</p>
+      <div class="socials">
+        <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form>
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="purpose">Purpose</label>
+        <select id="purpose" name="purpose">
+          <option value="general">General Inquiry</option>
+          <option value="reservation">Trip Reservation</option>
+          <option value="feedback">Feedback</option>
+        </select>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <label>
+          <input type="checkbox" name="subscribe">
+          Please subscribe me to the monthly newsletter
+        </label>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section class="map">
+      <h2>Find Us</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18..." style="width:100%; height:300px; border:0;" allowfullscreen loading="lazy"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>©2025 Rafting Site | Reatha Thorn</p>
+    <p><a href="images/contact-wireframe.png">View Wireframe</a></p>
+  </footer>
+</body>
+</html>
