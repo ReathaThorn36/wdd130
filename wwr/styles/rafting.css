@@ -1,265 +1,120 @@
-<<<<<<< HEAD
-/* General Reset */
-* {
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Verdana', sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: #f7f7f7;
   color: #333;
 }
 
-header, nav, main, footer {
-  max-width: 960px;
-  margin: auto;
-  padding: 1rem;
-}
-
-/* Header */
+/* Header & Navigation */
 header {
-  background-color: #0077cc;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
+  background-color: #2e8b57;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
 }
 
 header img {
   height: 60px;
 }
 
-/* Navigation */
-nav {
-  background-color: #004c99;
-  margin-top: 10px;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: white;
+nav a {
+  margin: 0 10px;
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  display: block;
-}
-
-nav ul li a:hover {
-  background-color: #0066cc;
-  border-radius: 5px;
-}
-
-/* Hero Section */
-.hero {
-  position: relative;
-  background-image: url('../images/hero.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-}
-
-/* Main Content */
-main {
-  background-color: white;
-  padding: 2rem;
-  margin-top: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* Cards or Trip Section */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  margin: 2rem 0;
-}
-
-.card {
-  background-color: #eaf4ff;
-  padding: 1rem;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.card img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-/* Contact Form */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-form label {
+  color: #fff;
   font-weight: bold;
 }
 
-form input, form textarea {
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+nav a:hover {
+  text-decoration: underline;
 }
 
-form button {
-  background-color: #0077cc;
-  color: white;
-  padding: 0.75rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+/* Hero Image */
+.hero {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
 }
 
-form button:hover {
-  background-color: #005fa3;
+/* Main Section */
+main {
+  padding: 1rem;
+}
+
+main h2 {
+  color: #2e8b57;
+  margin-bottom: 0.5rem;
+}
+
+.adventures {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.adventures img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
 }
 
 /* Footer */
 footer {
-  background-color: #0077cc;
+  background-color: #2e8b57;
   color: white;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
-  font-size: 0.9rem;
 }
 
-/* Social icons */
-.social {
+.social-icons {
+  margin-top: 0.5rem;
+}
+
+.social-icons img {
+  width: 24px;
+  margin: 0 5px;
+}
+
+/* Form Styling */
+form {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 500px;
+  margin-top: 1rem;
+}
+
+form label {
+  display: block;
   margin-top: 10px;
 }
 
-.social img {
-  width: 32px;
-  margin: 0 5px;
-=======
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  background-color: #002f34;
-  color: white;
-  padding: 1rem;
-}
-
-header img {
-  height: 50px;
-  margin-right: 1rem;
-}
-
-nav a {
-  margin: 0 1rem;
-  color: white;
-  text-decoration: none;
-}
-
-.hero {
-  position: relative;
-  text-align: center;
-}
-
-.hero img {
+form input,
+form textarea {
   width: 100%;
-  height: auto;
-}
-
-.hero h1 {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 2rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 1rem;
-}
-
-.newsletter {
-  padding: 1rem;
-  background-color: #f0f0f0;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.grid-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-.grid-content img {
-  width: 100%;
-  height: auto;
-}
-
-.trip img {
-  width: 100%;
-  max-width: 600px;
-}
-
-.trip-table {
-  padding: 1rem;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th, td {
-  border: 1px solid #ccc;
   padding: 0.5rem;
-  text-align: center;
-}
-
-.cta {
-  text-align: center;
-  margin: 2rem 0;
-}
-
-.button {
-  background-color: #006064;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
+  margin-top: 5px;
+  border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-footer {
-  background-color: #002f34;
+form button {
+  margin-top: 10px;
+  padding: 0.5rem 1rem;
+  background-color: #2e8b57;
   color: white;
-  text-align: center;
-  padding: 1rem;
->>>>>>> 2845a641b997bc91bd4303a6ebeb01b25d518100
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #246b45;
 }

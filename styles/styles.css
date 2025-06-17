@@ -1,62 +1,46 @@
-<<<<<<< HEAD
-/* styles/styles.css */
-
-body {
-  font-family: Arial, sans-serif;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f8f9fa;
-  color: #333;
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header Section */
 header {
   text-align: center;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
 }
 
 header img {
   border-radius: 50%;
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Navigation Links */
+nav {
   margin-top: 10px;
 }
 
-nav {
-  background-color: #004080;
-  padding: 10px 0;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav li {
-  display: inline;
-  margin: 0 15px;
-=======
-body {
-  font-family: Arial, sans-serif;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem;
-  background-color: #f4f4f4;
-}
-
-header, footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
->>>>>>> 2845a641b997bc91bd4303a6ebeb01b25d518100
-}
-
 nav a {
-  color: white;
-<<<<<<< HEAD
   text-decoration: none;
+  margin: 0 10px;
+  color: #005f99;
   font-weight: bold;
 }
 
@@ -64,23 +48,29 @@ nav a:hover {
   text-decoration: underline;
 }
 
-main h2 {
-  color: #004080;
+/* Main Content */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+section {
+  margin-bottom: 20px;
+}
+
+section h2 {
+  color: #005f99;
+  margin-bottom: 10px;
+}
+
+/* Footer Styling */
 footer {
   text-align: center;
-  font-size: 0.9rem;
   margin-top: 30px;
-  color: #666;
-=======
-  margin: 0 1rem;
-  text-decoration: none;
-}
-
-main img {
-  float: right;
-  margin-left: 20px;
-  border-radius: 8px;
->>>>>>> 2845a641b997bc91bd4303a6ebeb01b25d518100
+  font-size: 0.9em;
+  color: #777;
 }
