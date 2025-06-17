@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* styles/styles.css */
 
 body {
@@ -35,10 +36,26 @@ nav ul {
 nav li {
   display: inline;
   margin: 0 15px;
+=======
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #f4f4f4;
+}
+
+header, footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+>>>>>>> 2845a641b997bc91bd4303a6ebeb01b25d518100
 }
 
 nav a {
   color: white;
+<<<<<<< HEAD
   text-decoration: none;
   font-weight: bold;
 }
@@ -56,4 +73,14 @@ footer {
   font-size: 0.9rem;
   margin-top: 30px;
   color: #666;
+=======
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+main img {
+  float: right;
+  margin-left: 20px;
+  border-radius: 8px;
+>>>>>>> 2845a641b997bc91bd4303a6ebeb01b25d518100
 }
