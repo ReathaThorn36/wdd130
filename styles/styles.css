@@ -1,46 +1,30 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* styles/styles.css */
 
-/* Body Styling */
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  max-width: 1000px;
+  margin: auto;
   background-color: #f4f4f4;
   color: #333;
-  padding: 20px;
 }
 
-/* Header Section */
 header {
+  background-color: #003366;
+  color: white;
+  padding: 1rem;
   text-align: center;
-  padding-bottom: 20px;
 }
 
-header h1 {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-header img {
-  border-radius: 50%;
-  width: 150px;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-/* Navigation Links */
 nav {
-  margin-top: 10px;
+  margin-top: 1rem;
 }
 
 nav a {
+  margin: 0 1rem;
   text-decoration: none;
-  margin: 0 10px;
-  color: #005f99;
+  color: white;
   font-weight: bold;
 }
 
@@ -48,29 +32,36 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Main Content */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
 main {
-  max-width: 800px;
-  margin: 0 auto;
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-section {
-  margin-bottom: 20px;
+h1, h2 {
+  color: #003366;
 }
 
-section h2 {
-  color: #005f99;
-  margin-bottom: 10px;
+aside {
+  background-color: #e0f0ff;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-left: 4px solid #0077cc;
 }
 
-/* Footer Styling */
 footer {
   text-align: center;
-  margin-top: 30px;
-  font-size: 0.9em;
-  color: #777;
+  padding: 1rem;
+  background-color: #003366;
+  color: white;
+  margin-top: 2rem;
+  font-size: 0.9rem;
 }
